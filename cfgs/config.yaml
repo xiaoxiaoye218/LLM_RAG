@@ -1,0 +1,19 @@
+llm:
+    name: "gpt-4o-2024-08-06"
+    temperature: 0.9
+    max_tokens: 2048
+embedding:
+    name: "BAAI/bge-base-zh-v1.5"
+    dim: 768 
+rerank:
+    name: "BAAI/bge-reranker-large"
+milvus:
+    host: "localhost" 
+    port: "19530"
+    collection_name: "history_rag"
+    retrieve_topk: 100
+    window_size: 4
+    rerank_topk: 25
+    
+
+
